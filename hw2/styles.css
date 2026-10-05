@@ -1,0 +1,258 @@
+/*
+ * Nirupamarayudu Chitturi | Panther ID: 002931435
+ * Section: Web Programming - Graduate track
+ * Homework 2: screen layout, responsive behavior and accessible focus states.
+ * Grid describes the two-dimensional reviews/overview/counter relationship.
+ * Flexbox aligns each critic icon with its text and can wrap below 250px.
+ * At 700px the sidebar moves below reviews; at 480px review columns stack.
+ * Base block layout is the fallback when CSS Grid is unavailable.
+ */
+body {
+    margin: 0;
+    padding: 0;
+    background: #efe0a2 url("images/background.png");
+    font: 8pt Verdana, Tahoma, sans-serif;
+}
+.banner {
+    height: 50px;
+    text-align: center;
+    background: #284c0d url("images/bannerbackground.png") repeat-x;
+    overflow: hidden;
+}
+.banner img {
+    height: 50px;
+    width: auto;
+    max-width: none;
+}
+h1 {
+    margin: 0.67em 0;
+    text-align: center;
+    font: bold 24pt Tahoma, Verdana, sans-serif;
+}
+.movie-frame {
+    width: 800px;
+    max-width: calc(100% - 32px);
+    margin: 0 auto 42px;
+    border: 4px solid gray;
+}
+.main-reviews,
+.overview {
+    min-width: 0;
+}
+.movie-frame {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 250px;
+    grid-template-areas: "reviews overview" "counter counter";
+    align-items: stretch;
+}
+.main-reviews {
+    grid-area: reviews;
+}
+.overview {
+    grid-area: overview;
+    background-color: #a2b964;
+    font: 8pt Arial, sans-serif;
+}
+.overview > img {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.overview dl {
+    margin: 10px;
+}
+.overview dt {
+    margin-top: 1em;
+    font-weight: bold;
+}
+.overview dd {
+    overflow-wrap: anywhere;
+}
+.rating {
+    display: flex;
+    align-items: flex-end;
+    min-height: 83px;
+    background: #294518 url("images/rottenbackground.png") repeat-x;
+    color: white;
+}
+.rating > img {
+    width: 98px;
+    height: 83px;
+    flex: 0 0 98px;
+}
+.score {
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    line-height: 83px;
+}
+.total {
+    padding: 0 4px 12px 5px;
+}
+.reviews {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2%;
+    padding: 0 2%;
+}
+.review {
+    margin-bottom: 3em;
+}
+.review-quote {
+    padding: 8px;
+    border: 2px solid gray;
+    background-color: #e1d697;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+.review-quote img {
+    float: left;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+.review-quote::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.review-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5px;
+}
+.review-meta img {
+    flex: 0 0 35px;
+    width: 35px;
+    height: 33px;
+}
+.review-meta span {
+    flex: 1 1 210px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.review-count {
+    grid-area: counter;
+    margin: 0;
+    padding: 5px;
+    background-color: #a2b964;
+    text-align: center;
+}
+.validators {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.validators a {
+    padding: 5px 8px;
+    border: 1px solid #687644;
+    background: #fff;
+    color: #17380b;
+    font-weight: bold;
+}
+a {
+    color: #182c7f;
+}
+a:hover {
+    text-decoration-thickness: 2px;
+}
+a:focus-visible,
+.movie-frame:focus-visible {
+    outline: 3px solid #173c8b;
+    outline-offset: 3px;
+}
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: -60px;
+    z-index: 2;
+    padding: 10px;
+    background: white;
+    color: #182c7f;
+}
+.skip-link:focus {
+    top: 8px;
+}
+@supports not (display: grid) {
+    .main-reviews {
+        float: left;
+        width: calc(100% - 250px);
+    }
+    .overview {
+        float: right;
+        width: 250px;
+    }
+    .review-column {
+        float: left;
+        width: 47%;
+        margin-right: 2%;
+    }
+    .reviews::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .review-count {
+        clear: both;
+    }
+}
+@media (max-width: 700px) {
+    .movie-frame {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "reviews" "overview" "counter";
+    }
+    .main-reviews,
+    .overview {
+        float: none;
+        width: auto;
+    }
+    .overview dl {
+        margin: 16px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 10pt;
+    }
+    .banner img {
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    h1 {
+        font-size: 22pt;
+    }
+    .reviews {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        padding: 0 12px;
+    }
+    .review-column {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+    .review {
+        margin-bottom: 24px;
+    }
+    .score {
+        font-size: 42pt;
+    }
+    .total {
+        font-size: 8pt;
+        padding-bottom: 12px;
+    }
+    .rating {
+        flex-wrap: wrap;
+    }
+    .overview {
+        font-size: 10pt;
+    }
+}

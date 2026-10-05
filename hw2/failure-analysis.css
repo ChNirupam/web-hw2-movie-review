@@ -1,0 +1,10 @@
+/*
+ * Nirupamarayudu Chitturi | 002931435 | Web Programming - Graduate track.
+ * Critical Thinking 04: isolated, deliberate fixed-width defect at mobile sizes.
+ * Removing this override restores the responsive frame in index.html.
+ */
+@media (max-width: 700px) {
+    .movie-frame {
+        min-width: 800px;
+    }
+}
