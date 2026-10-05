@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- Nirupamarayudu Chitturi | 002931435 | Web Programming - Graduate track.
+     Homework 2: screenshot evidence, measurements and critical-thinking answers. -->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homework 2 - Layout Lab Evidence</title>
+    <link rel="stylesheet" href="evidence.css" />
+</head>
+<body>
+<main>
+<p class="eyebrow">HOMEWORK 2 / LAYOUT LAB
+</p><h1>My Movie Review: evidence and analysis
+</h1>
+<p>Nirupamarayudu Chitturi · Panther ID: 002931435<br />Web Programming · Graduate track · Fall 2026
+</p>
+<p><a href="index.html">Open the submitted movie page</a> · <a href="../index.html">Student
+homepage</a>
+</p>
+<section>
+<h2>Capture method
+</h2>
+<p>All movie-page screenshots use Google Chrome for Testing 134.0.6998.35. The viewport is exactly
+the stated CSS-pixel width, with a height of 900px and device scale factor 1. Screenshots are
+automated browser captures. The labels above each image were added after capture; they show the
+actual local document URI and measurements from getComputedStyle and getBoundingClientRect. The
+labels do not alter the page layout. These are computed-style measurements, rather than
+screenshots of the DevTools Computed panel.
+</p>
+<p>Original images and template appearance were obtained from the matching Web Programming Step by
+Step exercise because the instructor resource server returned HTTP 502. All nine required assets
+are local. This record covers local implementation and testing; it does not claim a Codd upload,
+GitHub publication, or iCollege submission.
+</p>
+</section>
+<section>
+<h2>Desktop reference reconstruction
+</h2>
+<figure><a href="evidence/desktop-1280.png"><img src="evidence/desktop-1280.png" alt="1280px
+desktop: 800px inner frame, 550px reviews, 250px overview, 4px border." /></a><figcaption>1280px
+desktop: 800px inner frame, 550px reviews, 250px overview, 4px border.</figcaption>
+</figure>
+<p>The frame occupies 808px including its two 4px borders. It is horizontally centered. The rating
+uses the supplied 83px image strip; reviews use the supplied yellow background and icons; the
+overview uses #A2B964. The counter spans both Grid columns. At desktop widths the page retains the
+required 8pt body font and 24pt title.
+</p>
+</section>
+<section>
+<h2>01 · Cascade investigation
+</h2>
+<p>At 480px, the initial first review box computes to <strong>rgb(225, 214, 151)</strong>.
+Removing only background-color from the .review-quote rule changes it to <strong>rgba(0, 0, 0,
+0)</strong>. Background color is not inherited. No other matching rule sets that paragraph’s
+background, so its initial value is transparent. The body’s tiled background becomes visible
+through the review and its transparent ancestors.
+</p><pre><code>.review-quote {
+    padding: 8px;
+    border: 2px solid gray;
+    background-color: #e1d697;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+/* After removing only background-color, the visible painting comes from: */
+body {
+    background: #efe0a2 url(&quot;images/background.png&quot;);
+}</code>
+</pre>
+<p>.review-quote has specificity (0,1,0), while body has (0,0,1). They style different elements,
+so the body declaration does not win a cascade contest on the paragraph. Source order cannot
+supply a missing matching declaration here. The background-color declaration was restored in the
+submitted styles.css; the after-state exists only in the capture session.
+</p>
+<div class="pair">
+<figure><a href="evidence/cascade-before-480.png"><img src="evidence/cascade-before-480.png"
+alt="Before: .review-quote has #E1D697." /></a><figcaption>Before: .review-quote has
+#E1D697.</figcaption>
+</figure>
+<figure><a href="evidence/cascade-after-480.png"><img src="evidence/cascade-after-480.png"
+alt="After removal: transparent quote reveals the body texture." /></a><figcaption>After removal:
+transparent quote reveals the body texture.</figcaption>
+</figure>
+</div>
+</section>
+<section>
+<h2>02 · Responsive trade-off
+</h2>
+<p>At exactly 480px, both the main review region and overview compute to <strong>448px</strong>.
+The bordered frame measures 456px; its remaining 24px become two 12px outer margins.
+documentElement.scrollWidth and innerWidth both equal 480, so measured horizontal overflow is
+<strong>0px</strong>.
+</p>
+<p>The deliberate trade-off is to use one review column and a 10pt body font on a phone. The
+controlled comparison changes only grid-template-columns back to two equal tracks. Both versions
+avoid overflow, but the first quote shrinks from 424.00px to 207.77px, and critic metadata wraps.
+The final single column preserves reading width and keeps each icon beside the reviewer’s text.
+</p><pre><code>@media (max-width: 480px) {
+    .reviews {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        padding: 0 12px;
+    }
+}
+/* Single changed value during comparison: */
+/* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); */</code>
+</pre>
+<div class="pair">
+<figure><a href="evidence/architecture-480.png"><img src="evidence/architecture-480.png"
+alt="Final: 480px viewport, one readable review column." /></a><figcaption>Final: 480px viewport,
+one readable review column.</figcaption>
+</figure>
+<figure><a href="evidence/tradeoff-two-columns-480.png"><img
+src="evidence/tradeoff-two-columns-480.png" alt="Comparison: 480px viewport, two narrower review
+tracks." /></a><figcaption>Comparison: 480px viewport, two narrower review tracks.</figcaption>
+</figure>
+</div>
+</section>
+<section>
+<h2>03 · Architecture defense
+</h2>
+<p>Grid expresses the two-dimensional relationship among the review region, overview, and
+full-width counter. Named areas let the same DOM order become a single stacked track at 700px.
+Flexbox expresses the one-dimensional relationship between each critic icon and its
+name/publication. The icon stays 35px wide, the text flexes, and gap provides the 5px separation
+without spacer elements.
+</p>
+<table>
+<thead>
+<tr><th>Viewport (px)</th><th>Main (px)</th><th>Overview (px)</th><th>Overflow (px)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1280</td><td>550</td><td>250</td><td>0</td>
+</tr>
+<tr><td>700</td><td>668</td><td>668</td><td>0</td>
+</tr>
+<tr><td>480</td><td>448</td><td>448</td><td>0</td>
+</tr>
+<tr><td>280</td><td>248</td><td>248</td><td>0</td>
+</tr>
+</tbody>
+</table><pre><code>.movie-frame {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 250px;
+    grid-template-areas: &quot;reviews overview&quot; &quot;counter counter&quot;;
+}
+.main-reviews { grid-area: reviews; }
+.overview { grid-area: overview; }
+.review-count { grid-area: counter; }
+.review-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5px;
+}
+.review-meta img { flex: 0 0 35px; }
+.review-meta span { flex: 1 1 210px; min-width: 0; }
+@media (max-width: 700px) {
+    .movie-frame {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: &quot;reviews&quot; &quot;overview&quot; &quot;counter&quot;;
+    }
+}</code>
+</pre>
+<div class="pair">
+<figure><a href="evidence/architecture-700.png"><img src="evidence/architecture-700.png"
+alt="700px: overview below the two-column review region." /></a><figcaption>700px: overview below
+the two-column review region.</figcaption>
+</figure>
+<figure><a href="evidence/architecture-480.png"><img src="evidence/architecture-480.png"
+alt="480px: overview below a single review column." /></a><figcaption>480px: overview below a
+single review column.</figcaption>
+</figure>
+</div>
+<p>The first icon and author share the same top coordinate at 700px and 480px. At 280px, the
+metadata item has less than the 250px needed for the 35px icon, 5px gap, and 210px text basis;
+flex-wrap moves the name to the next line. Document overflow remains 0px. The fallback uses floats
+only inside @supports not (display: grid); the mobile rules clear those floats and reset the
+region widths to auto.
+</p>
+<figure><a href="evidence/flex-wrap-280.png"><img src="evidence/flex-wrap-280.png" alt="280px
+supplemental capture: real metadata wrapping without horizontal scrolling."
+/></a><figcaption>280px supplemental capture: real metadata wrapping without horizontal
+scrolling.</figcaption>
+</figure>
+</section>
+<section>
+<h2>04 · Controlled failure and diagnosis
+</h2>
+<p>The defect is isolated in failure-analysis.html and failure-analysis.css. The original
+index.html remains responsive. The defect’s later media rule forces the frame to retain an 800px
+minimum width even at 480px. The document becomes 808px wide, causing <strong>328px horizontal
+overflow</strong>. The viewport capture shows review content cut off on the right.
+</p><pre><code>/* failure-analysis.css, loaded after the screen and print stylesheets */
+@media (max-width: 700px) {
+    .movie-frame {
+        min-width: 800px;
+    }
+}</code>
+</pre>
+<p>The winning defect selector has specificity (0,1,0), and its minimum size prevents the intended
+maximum size from shrinking the frame. CSS resolves a minimum greater than the available maximum
+by honoring the minimum. The corrected page omits the defect stylesheet and uses the original
+800px width with max-width: calc(100% - 32px). Its main and sidebar return to 448px and its
+document width returns to 480px. Both original defect evidence and corrected evidence are
+preserved.
+</p>
+<div class="pair">
+<figure><a href="evidence/failure-480.png"><img src="evidence/failure-480.png" alt="Defect: 480px
+viewport clips an 808px-wide document." /></a><figcaption>Defect: 480px viewport clips an
+808px-wide document.</figcaption>
+</figure>
+<figure><a href="evidence/corrected-480.png"><img src="evidence/corrected-480.png" alt="Corrected:
+480px viewport, 448px regions, 0px overflow." /></a><figcaption>Corrected: 480px viewport, 448px
+regions, 0px overflow.</figcaption>
+</figure>
+</div>
+</section>
+<section>
+<h2>Keyboard accessibility and print audit
+</h2>
+<p>The first Tab focuses the skip link, makes it visible at top: 8px, and shows a 3px blue
+outline. Enter moves focus to movie-content. The next Tab reaches the TMNT review-site link with
+the same visible outline; validator links follow in DOM order. Images have text alternatives, and
+labeled regions have matching landmark roles. No positive tabindex or keyboard trap is used.
+</p>
+<figure><a href="evidence/keyboard-focus-1280.png"><img src="evidence/keyboard-focus-1280.png"
+alt="Keyboard: first Tab reveals the skip link and visible focus outline."
+/></a><figcaption>Keyboard: first Tab reveals the skip link and visible focus
+outline.</figcaption>
+</figure>
+<p>print.css hides the image banner, skip link, and fixed validator controls. The browser confirms
+display: none for those controls and background-image: none for the body. The print layout uses an
+automatic-width frame, a 200px overview, black text, single-column reviews, and break-inside:
+avoid on each review. The following capture uses print media; it verifies styling, not
+printer-specific pagination.
+</p>
+<figure><a href="evidence/print-1280.png"><img src="evidence/print-1280.png" alt="Chrome
+print-media rendering: white background and no fixed validator controls." /></a><figcaption>Chrome
+print-media rendering: white background and no fixed validator controls.</figcaption>
+</figure>
+</section>
+<section>
+<h2>Validation record
+</h2>
+<p>The local Nu HTML Checker, version 26.10.2 (1815ff1), reports <strong>zero HTML errors</strong>
+for the homepage, movie page, and defect copy. CSSTree 3.2.1 reports <strong>zero CSS parse or
+property/value errors</strong> for the screen, print, defect, and homepage styles. Browser
+captures report no page-script errors and every page image loads. The document uses the HTML5
+doctype with XHTML-style lowercase, quoted attributes, and closed empty elements, following the
+brief’s final HTML5 submission requirement.
+</p>
+<p>Online W3C validation was blocked by automatic approval review because uploading the project
+source would disclose content externally. No online W3C pass is claimed. The local Nu checker is
+the standalone HTML conformance checker; CSS checks here use CSSTree and are not a W3C CSS
+certificate.
+</p><pre><code>java -jar vnu.jar --errors-only --format json index.html hw2/index.html \
+    hw2/failure-analysis.html
+Result: {&quot;version&quot;:&quot;26.10.2 (1815ff1)&quot;,&quot;messages&quot;:[]}
+CSS parser and property-value validation: CSSTree 3.2.1
+styles.css: 139 declarations, 0 errors
+print.css: 32 declarations, 0 errors
+failure-analysis.css: 1 declaration, 0 errors
+homepage.css: 29 declarations, 0 errors</code>
+</pre>
+<p><a href="evidence/html-validation.json">HTML validation output</a> · <a
+href="evidence/css-validation.json">CSS validation output</a> · <a
+href="evidence/browser-measurements.json">Complete browser measurements</a>
+</p>
+</section>
+<section>
+<h2>Two-minute architecture explanation
+</h2>
+<p>The desktop movie page has two main regions: the critic reviews and the overview. The inner
+frame is 800 pixels wide, split into 550 pixels for reviews and 250 pixels for the overview. Grid
+is useful here because it controls both the columns and the counter row. The areas are named
+reviews, overview, and counter, so the mobile version can rearrange the regions without
+duplicating content.
+</p>
+<p>At 700 pixels, the overview moves below the reviews. Both regions measure 668 pixels, and the
+page has no horizontal overflow. At 480 pixels, the reviews also become one column and the font
+increases to 10 points. Both major regions measure 448 pixels. I compared this with two review
+columns at the same width. The narrow columns still fit, but make each review harder to read and
+cause the critic information to wrap, so the single column is the better final choice.
+</p>
+<p>Flexbox is used for each critic’s icon and text because that is a one-dimensional alignment
+problem. The icon has a fixed width, the text grows, and the five-pixel gap handles spacing. The
+small-width capture shows that wrapping works without creating a scrollbar.
+</p>
+<p>The failure copy demonstrates why a fixed minimum width is dangerous. Forcing the frame to stay
+at 800 pixels on a 480-pixel viewport produces 328 pixels of overflow and cuts off the review on
+the right. The original page corrects this by allowing the frame to shrink. The keyboard audit
+also confirms a visible skip link and focus outline, while the print stylesheet removes fixed
+controls and image backgrounds.
+</p>
+</section></main>
+</body>
+</html>

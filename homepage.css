@@ -1,0 +1,13 @@
+/* Nirupamarayudu Chitturi | 002931435 | Web Programming homepage styles. */
+body { margin: 0; background: #f4f6f0; color: #183324; font: 16px Arial, sans-serif; }
+main { max-width: 760px; margin: 60px auto; padding: 24px; }
+.eyebrow { font-size: 12px; font-weight: bold; letter-spacing: 1px; }
+h1 { font-size: 36px; overflow-wrap: anywhere; }
+.identity { color: #52685a; }
+section { margin-top: 40px; }
+.assignment { display: flex; flex-direction: column; gap: 12px; padding: 24px;
+    border: 1px solid #c1cfba; background: white; color: #183324; text-decoration: none; }
+.assignment:hover { border-color: #254e32; }
+a:focus-visible { outline: 3px solid #1c55a5; outline-offset: 5px; }
+footer { margin-top: 40px; font-size: 13px; }
+@media (max-width: 480px) { main { margin: 20px auto; } h1 { font-size: 28px; } }

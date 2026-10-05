@@ -1,0 +1,1820 @@
+{
+  "browser": "134.0.6998.35",
+  "captures": {
+    "desktop-1280": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 1280,
+      "documentWidth": 1280,
+      "overflow": 0,
+      "frame": {
+        "x": 236,
+        "y": 130.875,
+        "width": 808,
+        "height": 886.90625,
+        "computedWidth": "800px",
+        "display": "grid",
+        "gridAreas": "\"reviews overview\" \"counter counter\"",
+        "columns": "550px 250px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 240,
+        "y": 134.875,
+        "width": 550,
+        "height": 855.90625,
+        "computedWidth": "550px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 790,
+        "y": 134.875,
+        "width": 250,
+        "height": 855.90625,
+        "computedWidth": "250px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 240,
+        "y": 217.875,
+        "width": 550,
+        "height": 666.28125,
+        "computedWidth": "528px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "258.719px 258.734px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 251,
+        "y": 228.53125,
+        "width": 258.71875,
+        "height": 124,
+        "computedWidth": "238.719px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 251,
+        "y": 363.1875,
+        "width": 258.71875,
+        "height": 33,
+        "computedWidth": "258.719px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "architecture-700": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 700,
+      "documentWidth": 700,
+      "overflow": 0,
+      "frame": {
+        "x": 12,
+        "y": 130.875,
+        "width": 676,
+        "height": 1548.53125,
+        "computedWidth": "668px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "668px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 16,
+        "y": 134.875,
+        "width": 668,
+        "height": 684.28125,
+        "computedWidth": "668px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 16,
+        "y": 819.15625,
+        "width": 668,
+        "height": 833.25,
+        "computedWidth": "668px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 16,
+        "y": 217.875,
+        "width": 668,
+        "height": 601.28125,
+        "computedWidth": "641.281px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "314.234px 314.234px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 29.359375,
+        "y": 228.53125,
+        "width": 314.234375,
+        "height": 98,
+        "computedWidth": "294.234px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 29.359375,
+        "y": 337.1875,
+        "width": 314.234375,
+        "height": 33,
+        "computedWidth": "314.234px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "architecture-480": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 480,
+      "documentWidth": 480,
+      "overflow": 0,
+      "frame": {
+        "x": 12,
+        "y": 123.28125,
+        "width": 456,
+        "height": 2270.5625,
+        "computedWidth": "448px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "448px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 16,
+        "y": 127.28125,
+        "width": 448,
+        "height": 1247.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 16,
+        "y": 1374.5625,
+        "width": 448,
+        "height": 990.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 16,
+        "y": 210.28125,
+        "width": 448,
+        "height": 1164.28125,
+        "computedWidth": "424px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "424px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 28,
+        "y": 223.609375,
+        "width": 424,
+        "height": 110,
+        "computedWidth": "404px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 28,
+        "y": 346.9375,
+        "width": 424,
+        "height": 33,
+        "computedWidth": "424px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "cascade-before-480": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 480,
+      "documentWidth": 480,
+      "overflow": 0,
+      "frame": {
+        "x": 12,
+        "y": 123.28125,
+        "width": 456,
+        "height": 2270.5625,
+        "computedWidth": "448px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "448px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 16,
+        "y": 127.28125,
+        "width": 448,
+        "height": 1247.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 16,
+        "y": 1374.5625,
+        "width": 448,
+        "height": 990.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 16,
+        "y": 210.28125,
+        "width": 448,
+        "height": 1164.28125,
+        "computedWidth": "424px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "424px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 28,
+        "y": 223.609375,
+        "width": 424,
+        "height": 110,
+        "computedWidth": "404px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 28,
+        "y": 346.9375,
+        "width": 424,
+        "height": 33,
+        "computedWidth": "424px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "cascade-after-480": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 480,
+      "documentWidth": 480,
+      "overflow": 0,
+      "frame": {
+        "x": 12,
+        "y": 123.28125,
+        "width": 456,
+        "height": 2270.5625,
+        "computedWidth": "448px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "448px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 16,
+        "y": 127.28125,
+        "width": 448,
+        "height": 1247.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 16,
+        "y": 1374.5625,
+        "width": 448,
+        "height": 990.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 16,
+        "y": 210.28125,
+        "width": 448,
+        "height": 1164.28125,
+        "computedWidth": "424px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "424px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 28,
+        "y": 223.609375,
+        "width": 424,
+        "height": 110,
+        "computedWidth": "404px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 28,
+        "y": 346.9375,
+        "width": 424,
+        "height": 33,
+        "computedWidth": "424px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "tradeoff-two-columns-480": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 480,
+      "documentWidth": 480,
+      "overflow": 0,
+      "frame": {
+        "x": 12,
+        "y": 123.28125,
+        "width": 456,
+        "height": 2070.921875,
+        "computedWidth": "448px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "448px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 16,
+        "y": 127.28125,
+        "width": 448,
+        "height": 1047.640625,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 16,
+        "y": 1174.921875,
+        "width": 448,
+        "height": 990.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 16,
+        "y": 210.28125,
+        "width": 448,
+        "height": 964.640625,
+        "computedWidth": "424px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "207.766px 207.766px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 28,
+        "y": 223.609375,
+        "width": 207.765625,
+        "height": 200,
+        "computedWidth": "187.766px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 28,
+        "y": 436.9375,
+        "width": 207.765625,
+        "height": 68,
+        "computedWidth": "207.766px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": true,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "failure-480": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/failure-analysis.html",
+      "viewport": 480,
+      "documentWidth": 808,
+      "overflow": 328,
+      "frame": {
+        "x": 0,
+        "y": 123.28125,
+        "width": 808,
+        "height": 2060.609375,
+        "computedWidth": "800px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "800px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 4,
+        "y": 127.28125,
+        "width": 800,
+        "height": 1097.28125,
+        "computedWidth": "800px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 4,
+        "y": 1224.5625,
+        "width": 800,
+        "height": 930.328125,
+        "computedWidth": "800px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 4,
+        "y": 210.28125,
+        "width": 800,
+        "height": 1014.28125,
+        "computedWidth": "776px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "776px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 16,
+        "y": 223.609375,
+        "width": 776,
+        "height": 65,
+        "computedWidth": "756px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 16,
+        "y": 301.9375,
+        "width": 776,
+        "height": 33,
+        "computedWidth": "776px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "corrected-480": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 480,
+      "documentWidth": 480,
+      "overflow": 0,
+      "frame": {
+        "x": 12,
+        "y": 123.28125,
+        "width": 456,
+        "height": 2270.5625,
+        "computedWidth": "448px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "448px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 16,
+        "y": 127.28125,
+        "width": 448,
+        "height": 1247.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 16,
+        "y": 1374.5625,
+        "width": 448,
+        "height": 990.28125,
+        "computedWidth": "448px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 16,
+        "y": 210.28125,
+        "width": 448,
+        "height": 1164.28125,
+        "computedWidth": "424px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "424px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 28,
+        "y": 223.609375,
+        "width": 424,
+        "height": 110,
+        "computedWidth": "404px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 28,
+        "y": 346.9375,
+        "width": 424,
+        "height": 33,
+        "computedWidth": "424px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "flex-wrap-280": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 280,
+      "documentWidth": 280,
+      "overflow": 0,
+      "frame": {
+        "x": 12,
+        "y": 123.28125,
+        "width": 256,
+        "height": 3107.140625,
+        "computedWidth": "248px",
+        "display": "grid",
+        "gridAreas": "\"reviews\" \"overview\" \"counter\"",
+        "columns": "248px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 16,
+        "y": 127.28125,
+        "width": 248,
+        "height": 1927.28125,
+        "computedWidth": "248px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 16,
+        "y": 2054.5625,
+        "width": 248,
+        "height": 1146.859375,
+        "computedWidth": "248px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 16,
+        "y": 235.28125,
+        "width": 248,
+        "height": 1819.28125,
+        "computedWidth": "224px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "224px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 28,
+        "y": 248.609375,
+        "width": 224,
+        "height": 200,
+        "computedWidth": "204px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 28,
+        "y": 461.9375,
+        "width": 224,
+        "height": 68,
+        "computedWidth": "224px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": true,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ]
+    },
+    "keyboard-focus-1280": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 1280,
+      "documentWidth": 1280,
+      "overflow": 0,
+      "frame": {
+        "x": 236,
+        "y": 130.875,
+        "width": 808,
+        "height": 886.90625,
+        "computedWidth": "800px",
+        "display": "grid",
+        "gridAreas": "\"reviews overview\" \"counter counter\"",
+        "columns": "550px 250px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 240,
+        "y": 134.875,
+        "width": 550,
+        "height": 855.90625,
+        "computedWidth": "550px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 790,
+        "y": 134.875,
+        "width": 250,
+        "height": 855.90625,
+        "computedWidth": "250px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(162, 185, 100)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 240,
+        "y": 217.875,
+        "width": 550,
+        "height": 666.28125,
+        "computedWidth": "528px",
+        "display": "grid",
+        "gridAreas": "none",
+        "columns": "258.719px 258.734px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 251,
+        "y": 228.53125,
+        "width": 258.71875,
+        "height": 124,
+        "computedWidth": "238.719px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(225, 214, 151)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 251,
+        "y": 363.1875,
+        "width": 258.71875,
+        "height": 33,
+        "computedWidth": "258.719px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ],
+      "note": "Tab 1: skip link visible with 3px outline"
+    },
+    "print-1280": {
+      "url": "file:///workspace/scratch/82a0d45f3563/build/package/hw2/index.html",
+      "viewport": 1280,
+      "documentWidth": 1280,
+      "overflow": 0,
+      "frame": {
+        "x": 0,
+        "y": 53.640625,
+        "width": 1280,
+        "height": 981.953125,
+        "computedWidth": "1278px",
+        "display": "grid",
+        "gridAreas": "\"reviews overview\" \"counter counter\"",
+        "columns": "1078px 200px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "main": {
+        "x": 1,
+        "y": 54.640625,
+        "width": 1078,
+        "height": 953.953125,
+        "computedWidth": "1078px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "sidebar": {
+        "x": 1079,
+        "y": 54.640625,
+        "width": 200,
+        "height": 953.953125,
+        "computedWidth": "200px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "reviews": {
+        "x": 1,
+        "y": 150.96875,
+        "width": 1078,
+        "height": 841.625,
+        "computedWidth": "1058px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "minmax(0px, 1fr) minmax(0px, 1fr)",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "quote": {
+        "x": 11,
+        "y": 150.96875,
+        "width": 1058,
+        "height": 48,
+        "computedWidth": "1040px",
+        "display": "block",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgb(255, 255, 255)",
+        "overflow": "visible",
+        "flexWrap": "nowrap"
+      },
+      "metadata": {
+        "x": 11,
+        "y": 212.296875,
+        "width": 1058,
+        "height": 33,
+        "computedWidth": "1058px",
+        "display": "flex",
+        "gridAreas": "none",
+        "columns": "none",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflow": "visible",
+        "flexWrap": "wrap"
+      },
+      "metadataWrapped": false,
+      "images": [
+        {
+          "src": "images/banner.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rottenbig.png",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/fresh.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/rotten.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/critic.gif",
+          "loaded": true
+        },
+        {
+          "src": "images/generaloverview.png",
+          "loaded": true
+        }
+      ],
+      "note": "Print media: banner and fixed validator controls hidden; white background"
+    }
+  },
+  "focus": {
+    "first": {
+      "text": "Skip to movie reviews",
+      "outline": "rgb(23, 60, 139) solid 3px",
+      "top": 8
+    },
+    "skipTarget": "movie-content",
+    "second": {
+      "text": "TMNT on Rotten\n                            Tomatoes",
+      "outline": "rgb(23, 60, 139) solid 3px"
+    }
+  },
+  "print": {
+    "validators": "none",
+    "banner": "none",
+    "background": "none",
+    "width": 1280,
+    "viewport": 1280
+  },
+  "errors": []
+}

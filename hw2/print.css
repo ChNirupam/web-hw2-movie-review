@@ -1,0 +1,71 @@
+/*
+ * Nirupamarayudu Chitturi | Panther ID: 002931435
+ * Section: Web Programming - Graduate track
+ * Homework 2: readable print layout without fixed controls or image backgrounds.
+ */
+@page {
+    margin: 15mm;
+}
+body {
+    background: white;
+    color: black;
+    font: 10pt Arial, sans-serif;
+}
+.banner,
+.validators,
+.skip-link {
+    display: none;
+}
+h1 {
+    margin-top: 0;
+    font-size: 22pt;
+}
+.movie-frame {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    border: 1px solid #555;
+    grid-template-columns: minmax(0, 1fr) 200px;
+    grid-template-areas: "reviews overview" "counter counter";
+}
+.rating {
+    background: white;
+    color: black;
+}
+.score {
+    color: black;
+}
+.total {
+    color: black;
+}
+.reviews {
+    display: block;
+    padding: 0 10px;
+}
+.review-column {
+    width: auto;
+    float: none;
+    margin: 0;
+}
+.review {
+    break-inside: avoid;
+    margin-bottom: 12pt;
+}
+.review-quote {
+    background: white;
+    border: 1px solid #555;
+}
+.overview {
+    background: white;
+    font-size: 9pt;
+}
+.overview > img {
+    width: 200px;
+}
+.review-count {
+    background: white;
+    border-top: 1px solid #555;
+}
+a {
+    color: black;
+}

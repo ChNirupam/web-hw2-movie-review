@@ -1,0 +1,31 @@
+{
+  "validator": "CSSTree",
+  "version": "3.2.1",
+  "files": [
+    {
+      "file": "hw2/styles.css",
+      "declarations": 139,
+      "errors": []
+    },
+    {
+      "file": "hw2/print.css",
+      "declarations": 32,
+      "errors": []
+    },
+    {
+      "file": "hw2/failure-analysis.css",
+      "declarations": 1,
+      "errors": []
+    },
+    {
+      "file": "homepage.css",
+      "declarations": 29,
+      "errors": []
+    },
+    {
+      "file": "hw2/evidence.css",
+      "declarations": 60,
+      "errors": []
+    }
+  ]
+}
